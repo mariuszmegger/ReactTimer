@@ -1,12 +1,13 @@
 var React = require('react');
+var Nav = require('Nav');
 
 var Main = (props) => {
   return (
     <div>
       	<div>
         	<div>
-	        	<p>Main.jsx rendered</p>
-	          	{props.children}
+	        	<Nav/>
+          	{props.children}
         	</div>
       	</div>
     </div>
