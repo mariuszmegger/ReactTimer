@@ -34,8 +34,6 @@ describe('handleStatusChange', () => {
         timer.setState({count: 10});
         timer.handleStatusChange('started');
         timer.handleStatusChange('stopped');
-        console.log(timer.state.countdownStatus);
-        console.log(timer.state.count);
         setTimeout(() => {
             expect(timer.state.countdownStatus).toBe('stopped');
             expect(timer.state.count).toBe(0);
